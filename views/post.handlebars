@@ -1,0 +1,36 @@
+<div class="card">
+    <h4 class="card-header bg-info text-white">
+        {{post.title}}
+    </h4>
+    <div class="card-body">
+        <p class="card-text">{{post.content}}</p>
+        <small class="text-muted">posted by {{post.user.name}} on {{formatDate post.date_created}}</small>
+    </div>
+</div>
+
+<div class="card ml-5">
+    <h4 class="card-header bg-info text-white">Comments</h4>
+    <div class="card-body">
+        {{#each post.comments as |comment|}}
+        <p>{{comment.content}} - {{comment.user.name}}, {{formatDate comment.date_created}}</p>
+
+        {{/each}}
+    </div>
+</div>
+{{#if logged_in}}
+<div class="card">
+    <h4 class="card-header bg-info"></h4>
+    <div class="card-body">
+        <form id="new-comment-form" post-id="{{post.id}}">
+            <div class="form-group">
+                <label for="comment">New Comment</label>
+                <textarea class="form-control" id="comment" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+    </div>
+</div>
+{{/if}}
+
+<script src="/js/post.js"></script>
