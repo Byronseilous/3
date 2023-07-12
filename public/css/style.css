@@ -1,0 +1,12 @@
+header {
+    height: 350px;
+    border-bottom: solid gray 1px;
+    background-image: url('/images/header3.jpg');
+    background-size: cover;
+    background-color: rgb(168, 209, 250);
+    margin-bottom: 20px;
+}
+
+.card {
+    margin: 10px;
+}
