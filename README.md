@@ -1,72 +1,37 @@
-# I Blog Technically: Tech Blog
+# Blogging Application
 
-  ![License](https://img.shields.io/badge/license-APACHE2.0-green.svg)
-  
-  ## Description
-  [Deployed application](https://rhubarb-cobbler-10166.herokuapp.com/)
-  
-  This is a full stack blogging application similar to WordPress. A user can view posts from other users on the home page, and, if signed in, they can 1) view, edit, or delete their own posts, and 2) comment on other users' posts. The app uses an Express server, Sequelize database model, and Sequelize session store to persist a login state. The server and database are deployed to Heroku, so this is a fully functional application from front to back end.
-  
-  ## Table of Contents
-  
-  * [Description](#description)
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Tests](#tests)
-  * [Contributing](#contributing)
-  * [License](#license)
-  * [Questions](#questions)
-    
-  ## Installation
-  Run npm i
-  
-  ## Usage
-  1. Visit the homepage at https://rhubarb-cobbler-10166.herokuapp.com/
 
-  ![application image](./public/images/homepage_unlogged.jpg)
-  
-  2. Create a new account
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Deployment](#deployment)
+- [License](#license)
 
-![application image](./public/images/login.jpg)
+## Introduction
 
-  3. Navigate to the dashboard to make new posts
+The Blogging Application is a full-stack platform that allows users to create, view, edit, and delete their own blog posts, as well as comment on posts created by other users. It features an Express server, Sequelize database model, and Sequelize session store to persist login states. The application is fully deployed to Heroku, providing a seamless experience from front-end to back-end.
 
-  ![application image](./public/images/dashboard.jpg)
-  ![application image](./public/images/new_post.jpg)
+## Features
 
-  4. View all blog posts on the home page
+- **Homepage with Posts**: Users can view posts from other users on the homepage.
 
-  5. Read all comments and leave your own by clicking on individual blog posts from the home page
+- **User Authentication**: Users can sign up, log in, and log out securely to manage their posts and comments.
 
-  ![application image](./public/images/comment.jpg)
+- **Create, Edit, and Delete Posts**: Authenticated users can create new posts, edit their existing posts, and delete posts they've created.
 
-  6. Update or delete your own posts from the dashboard
+- **Comment on Posts**: Users can leave comments on other users' posts, promoting engagement and interaction within the community.
 
-  ![application image](./public/images/edit_post.jpg)
+## Getting Started
 
-  7. Logout when you are done
-  
-  
+### Prerequisites
 
-  
-  ## License
-  [APACHE 2.0 License](https://choosealicense.com/licenses/apache-2.0/)
-  
-  ## Contributing
-  To contribute to this repo:
-  1. Fork the repo
-  1. Make changes to forked repo
-  1. Submit a pull request to this repo
-  
+Before you begin, ensure you have met the following requirements:
 
-  Thank you to the following who have already contributed: Renae Sowald
-  
-  ## Tests
-  no tests
-  
-  ## Questions
-  
-  For more information:
-  Visit my GitHub: [https://rsowald.github.io](https://rsowald.github.io)
+- Your server environment is set up with Node.js and the necessary dependencies.
+- The database (e.g., MySQL, PostgreSQL) is properly configured.
 
-  or Email: renaesowald@gmail.com
